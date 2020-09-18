@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.net.*;
+import java.util.Arrays;
 
 public class Receiver extends Thread {
     InetAddress group;
@@ -28,7 +29,7 @@ public class Receiver extends Thread {
                 e.printStackTrace();
             }
 
-            addressSet.add(packet.getAddress(), System.currentTimeMillis());
+            addressSet.add(packet.getSocketAddress(), System.currentTimeMillis());
         }
     }
 }

@@ -16,9 +16,7 @@ public class Sender extends Thread {
         this.port = port;
         this.addressSet = addressSet;
 
-        socket = new MulticastSocket(port);
-        socket.joinGroup(new InetSocketAddress(group, port),
-                NetworkInterface.getByInetAddress(group));
+        socket = new MulticastSocket();
 
         packet = new DatagramPacket(message.getBytes(), message.length(), group, port);
     }
