@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.net.*;
-import java.util.Arrays;
 
 public class Receiver extends Thread {
     InetAddress group;

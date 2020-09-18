@@ -1,6 +1,7 @@
-import java.net.InetAddress;
 import java.net.SocketAddress;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class AddressSet {
     private final HashMap<SocketAddress, Long> addressSet;
