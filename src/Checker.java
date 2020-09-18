@@ -10,7 +10,7 @@ public class Checker extends Thread {
     public void run() {
         while(!Thread.currentThread().isInterrupted()) {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(sleepTime);
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
